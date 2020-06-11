@@ -1,0 +1,39 @@
+.video-react-video{
+    height: 75vh;
+    width: 100%;
+    padding-top: 0% !important;
+    margin-top: 5px;
+}
+
+.video-react-controls-enabled .video-react-paused .video-react-fluid .video-react-user-inactive .video-react-workinghover .video-react{
+    padding-top: 0% !important;
+    display: none;
+}
+.{
+    padding-top: 0% !important;
+}
+
+*{
+    padding-top: 0% !important;
+}
+
+
+button{
+    display: none;
+}
+
+.video-react-control-text{
+    display: none;
+}
+
+.video-react-duration-display{
+    display:none;
+}
+
+/* span{
+    display: none;
+} */
+
+.video-react-time-control .video-react-current-time-display .video-react-time-divider{
+    display:none;
+}
