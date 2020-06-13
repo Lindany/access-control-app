@@ -1,8 +1,7 @@
 .video-react-video{
-    height: 75vh;
     width: 100%;
     padding-top: 0% !important;
-    margin-top: 5px;
+    margin-top: 8%;
 }
 
 .video-react-controls-enabled .video-react-paused .video-react-fluid .video-react-user-inactive .video-react-workinghover .video-react{

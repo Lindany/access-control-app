@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import 'rc-banner-anim/assets/index.css';
-// import banner1 from '../../images/banner2.jpg';
-// import banner2 from '../../images/pretoriaTvbanner.jpg';
-import './Header.scss';
+import banner2 from '../../images/banner2.jpg';
+import cartoon from '../../images/CARTOON.jpg';
+import current from '../../images/CURRENT.jpg';
+import movie from '../../images/MOVIE.jpg';
+import music from '../../images/MUSIC.jpg';
+import series from '../../images/SERIES.jpg';
+import sport from '../../images/SPORTS.jpg';
+import serieshd from '../../images/tax tv series.jpg';
+
+import pretoriaTvbanner from '../../images/pretoriaTvbanner.jpg';
+import './Header.css';
 import BannerAnim, { Element } from 'rc-banner-anim';
 import 'rc-banner-anim/assets/index.css';
 const {  Arrow, Thumb } = BannerAnim;
@@ -14,7 +22,9 @@ export default class Header extends Component {
     super(...arguments);
     this.imgArray = [
       'https://zos.alipayobjects.com/rmsportal/hzPBTkqtFpLlWCi.jpg',
-      'https://zos.alipayobjects.com/rmsportal/gGlUMYGEIvjDOOw.jpg',
+     // 'https://zos.alipayobjects.com/rmsportal/gGlUMYGEIvjDOOw.jpg',
+      cartoon,
+
     ];
     this.state = {
       intShow: 0,

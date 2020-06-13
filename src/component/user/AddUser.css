@@ -1,0 +1,23 @@
+.add-user-container{
+    display: grid;
+    justify-content: inherit;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+
+    
+}
+
+.content-heading{
+    align-self: center;
+    padding: 10px;
+}
+
+.input-items{
+    padding: 5px;
+}
+
+.MuiAvatar-root {
+    width: 200px !important;
+    height: 200px !important;
+}
