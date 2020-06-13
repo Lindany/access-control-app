@@ -8,6 +8,8 @@ import Dashboard from '../main/Main';
 import RegisterUser from '../user/AddUser';
 import ViewUsers from '../user/ViewUser';
 import StreamVideo from '../video/Video';
+import AboutUs from '../about/About';
+import Report from '../stats/Report';
 
 
 export default function Routes() {
@@ -18,6 +20,8 @@ export default function Routes() {
       <Route path="/adduser" component={RegisterUser} />
       <Route path="/viewuser" component={ViewUsers} />
       <Route path="/videostream" component={StreamVideo} />
+      <Route path="/aboutus" component={AboutUs} />
+      <Route path="/report" component={Report} />
 
       <Route path="/dashboard" component={Dashboard}  />
 
