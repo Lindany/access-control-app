@@ -25,7 +25,7 @@ import HeaderComponent from '../header/Header';
 import VideoPlayer from '../video/Video';
 import SigninComponent from '../signin/Login';
 import AddUser from '../user/AddUser';
-import ViewUsers from '../user/HomePage';
+import ViewUsers from '../user/Table';
 import Link from '@material-ui/core/Link';
 import AboutUs from '../about/About';
 import Report from '../stats/Report';
@@ -94,25 +94,6 @@ export default class SiderDemo extends React.Component {
             <Menu.Item key="6">Bus</Menu.Item>
             <Menu.Item key="7">Metrorail & Gautrain</Menu.Item>
           </SubMenu>
-         
-          {/* <Menu.Item key="10" icon={<SoundOutlined />}>
-            Taxi FM
-          </Menu.Item>
-          <Menu.Item key="11" icon={<SisternodeOutlined />}>
-            RAF Assistance 
-          </Menu.Item>
-          <Menu.Item key="12" icon={<UsergroupAddOutlined />}>
-            Visitors Stats
-          </Menu.Item>
-          <SubMenu key="sub3" icon={<FolderOpenOutlined />} title="Other Pages">
-            <Menu.Item key="13">About Us</Menu.Item>
-            <Menu.Item key="14">Netflix</Menu.Item>
-            <Menu.Item key="15">Advertise With Us</Menu.Item>
-            <Menu.Item key="16">Your Story</Menu.Item>
-            <Menu.Item key="17">Teen Journalist</Menu.Item>
-            <Menu.Item key="18">Commuter Chat</Menu.Item>
-            <Menu.Item key="19">Lift Club</Menu.Item>
-          </SubMenu> */}
           </Menu>
         </Sider>
         <Layout className="site-layout">

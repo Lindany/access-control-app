@@ -9,7 +9,7 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 import InputBase from '@material-ui/core/InputBase';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import fire from '../../fire';
+import {db} from '../../fire';
 
 
 import './AddUser.css';
@@ -86,25 +86,33 @@ export default function FormPropsTextFields(){
       const [name, setName] = React.useState('');
       const [code, setCode] = React.useState('');
       const [_state, _setState] = React.useState('');
+      const _handleState = (event) => {
+        _setState(event.target.value);
+      };
       const [faculty, setFaculty] = React.useState(''); 
 
      
       const handleSubmit = e =>{
         let newUser = {
-          "Full Name": name,
+          "FullName": name,
           "Code" : code,
           "State" : _state,
-          "Fuculty" : faculty,
+          "Faculty" : faculty,
           "Role": role
         }
 
         console.log('Submitted:',name, "Code:",code, "Faculty:",faculty, "State: ",_state)
-        let messageRef = fire.database().ref('messages').orderByKey().limitToLast
-        fire.database().ref('user-'+code).push(newUser); //add object
-        // this.setName('');
-        // this.setCode('');
-        // this._setState('');
-        // this.setFaculty('');
+        // let messageRef = fire.database().ref('tenants').orderByKey().limitToLast
+        // fire.database().ref('tenants').push(newUser); //add object
+        db.collection("tenants")
+        .doc(newUser.Code)
+        .set(newUser)
+        .then(() => {
+          console.log("A new user has been added", "Success");
+         })
+        .catch(error => {
+          console.log(error.message, "Create user failed");
+        });
         console.log("Successfuly saved record!!", newUser)
       }
       return (
@@ -125,7 +133,7 @@ export default function FormPropsTextFields(){
                   onChange={e => setCode(e.target.value)}
 
               />
-              <TextField
+              {/* <TextField
                   id="outlined-number"
                   label="State"
                   type="number"
@@ -135,7 +143,20 @@ export default function FormPropsTextFields(){
                   max={1}
                   onChange={e => _setState(e.target.value)}
 
-              />
+              /> */}
+              <FormControl className={classes.margin}>
+                  <InputLabel htmlFor="demo-customized-select-native">State</InputLabel>
+                  <NativeSelect
+                  id="state-select"
+                  value={_state}
+                  onChange={_handleState}
+                  input={<BootstrapInput />}
+                  >
+                  <option value={true}>IsIn</option>
+                  <option value={false}>IsOut</option>
+                 
+                  </NativeSelect>
+              </FormControl>
               <TextField
                   id="outlined-helperText"
                   label="Faculty"
