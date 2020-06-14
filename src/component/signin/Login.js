@@ -60,6 +60,11 @@ const useStyles = makeStyles((theme) => ({
 export default function SignInSide() {
   const classes = useStyles();
 
+  let isValidUser = () =>{
+    return <Link href="/dashboard" />
+   
+  }
+
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
@@ -104,9 +109,10 @@ export default function SignInSide() {
               fullWidth
               variant="contained"
               color="primary"
-              className={classes.submit}
+              onclick={()=>this.isValidUser}
+              //className={classes.submit}
             >
-              Sign In
+              <Link href="/dashboard" >Sign In</Link>
             </Button>
             <Grid container>
               <Grid item xs>

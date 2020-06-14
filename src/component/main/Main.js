@@ -25,7 +25,7 @@ import HeaderComponent from '../header/Header';
 import VideoPlayer from '../video/Video';
 import SigninComponent from '../signin/Login';
 import AddUser from '../user/AddUser';
-import ViewUsers from '../user/ViewUser';
+import ViewUsers from '../user/HomePage';
 import Link from '@material-ui/core/Link';
 import AboutUs from '../about/About';
 import Report from '../stats/Report';

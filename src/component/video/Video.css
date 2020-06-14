@@ -1,13 +1,14 @@
 .video-react-video{
     width: 100%;
     padding-top: 0% !important;
-    margin-top: 8%;
+    margin-top: 14vh;
 }
 
 .video-react-controls-enabled .video-react-paused .video-react-fluid .video-react-user-inactive .video-react-workinghover .video-react{
     padding-top: 0% !important;
     display: none;
 }
+
 .{
     padding-top: 0% !important;
 }

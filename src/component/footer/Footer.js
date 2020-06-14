@@ -15,9 +15,9 @@ export default class Footer extends Component {
     render() {
         return (
             <div>
-  <a href="https://twitter.com/pretoriatv?lang=en" className="twitter social">
+  {/* <a href="https://twitter.com/pretoriatv?lang=en" className="twitter social">
   <FontAwesomeIcon icon={faTwitter} size="2x" />
-</a>
+</a> */}
  <a
   href="https://web.facebook.com/PretoriaTV"
   className="facebook social"
@@ -38,26 +38,26 @@ export default class Footer extends Component {
   <FontAwesomeIcon icon={faYoutube} size="2x" />
 </a>
 
-<a
+{/* <a
   href="https://www.youtube.com/channel/UC-J0sdaVw2WLIpfZi75Ua7A"
   className="linkedin social"
 >
   <FontAwesomeIcon icon={faLinkedin} size="2x" />
-</a>
+</a> */}
 
-<a
+{/* <a
   href="https://www.youtube.com/channel/UC-J0sdaVw2WLIpfZi75Ua7A"
   className="whatsapp social"
 >
   <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-</a>
+</a> */}
 
-<a
+{/* <a
   href="https://www.youtube.com/channel/UC-J0sdaVw2WLIpfZi75Ua7A"
   className="skype social"
 >
   <FontAwesomeIcon icon={faSkype} size="2x" />
-</a>
+</a> */}
             </div>
         )
     }
